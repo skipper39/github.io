@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="欲しいアプリがきっと見つかる本気のサーチアプリ">
+  <title>本気のサーチアプリ</title>
+  <link rel="icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/54a814897d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/reboot.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header><i id="open_menu" class="fas fa-bars"></i>
+    <nav id="menu"><i id="close_menu" class="fas fa-times"></i>
+      <ul>
+        <li>
+          <a href="#voices">お客さんの声</a>
+          <a href="#functions">特徴一覧</a>
+          <a href="#download">ダウンロード</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 id="hed_1"><img src="img/header.jpg" alt="ヘッダー画像"></h1>
+  </header>
+
+  <section id="onayami">
+    <div class="head_line">
+      <h2>こんなお悩みありませんか？</h2>
+    </div>
+    <ul>
+      <li>
+        <i class="fas fa-times-circle"></i>探したいアプリが見つからない…
+      </li>
+      <li>
+        <i class="fas fa-times-circle"></i>口コミやレビューをもっと見たい…
+      </li>
+    </ul>
+  </section>
+
+  <section id="voices">
+    <h2 class="head_line blue_line">アプリ利用者さんの声</h2>
+    <div class="container">
+      <h3>90％以上の方が探している<br class="br_sp">アプリが見つかる！と回答</h3>
+      <img src="img/women.jpg" width="420" height="270">
+      <div class="desc">
+        <p>誰でも利用しやすいように徹底的に改善してきました。<br>難しい作業をしなくても簡単に探せて、信頼性のできるアプリが見つけることができます。<br>「探しててアプリが見つかるようになりました！」などご好評頂いております。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="functions">
+    <h2 class="head_line blue_line">アプリの機能一覧</h2>
+    <div class="container">
+      <h3>いいアプリをより見つけやすく</h3>
+      <div class="flex">
+        <div class="function">
+          <img src="img/app1.jpg">
+          <h4>より詳しく</h4>
+          <p>独自のリサーチ力を活かしてアプリを実際にダウンロードしてレビューを細かくまとめています。</p>
+        </div>
+        <div class="function">
+          <img src="img/app2.jpg">
+          <h4>より安心感を</h4>
+          <p>利用者様のレビューの投稿が非常に盛んなので、ダウンロードする前にアプリの評判がわかります。</p>
+        </div>
+        <div class="function">
+          <img src="img/app3.jpg">
+          <h4>幅広いジャンルに対応</h4>
+          <p>ライフスタイルからゲームまで幅白いジャンルからアプリを探すことができます。</p>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section id="download">
+    <a href="#" target="_blank" class="btn">ダウンロード</a>
+  </section>
+
+  <footer>
+    <p>&copy; 本気のパソコン塾</p>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      const open_menu = document.getElementById('open_menu');
+      const close_menu = document.getElementById('close_menu');
+      const menu = document.getElementById('menu');
+      const hed_1 = document.getElementById('hed_1');
+
+      open_menu.addEventListener('click', function(){
+        menu.classList.add('shown');
+        hed_1.classList.add('marg');
+      });
+
+      close_menu.addEventListener('click', function(){
+        menu.classList.remove('shown');
+        hed_1.classList.remove('marg');
+      });
+
+    })();
+  </script>
+
+
+</body>
+</html>
