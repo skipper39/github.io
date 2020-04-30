@@ -186,6 +186,14 @@ header p {
   margin: 0;
 }
 
+#open_menu {
+  display: none;
+}
+
+#close_menu {
+  display: none;
+}
+
 /* blog */
 
 #blog {
